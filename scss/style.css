@@ -687,10 +687,13 @@ body {
     display: flex;
   }
   .container-total__container-title {
-    width: 24em;
+    width: 20em;
   }
   .container-title--title {
     font-size: 2.4em;
+  }
+  .container-title--subtitle {
+    margin: 2px;
   }
   .container-title--subtitle--parrafo {
     font-size: 1.2em;
