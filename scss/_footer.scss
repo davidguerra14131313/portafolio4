@@ -1,0 +1,33 @@
+
+.footer
+{
+    grid-column: 1/4;
+    height: auto;
+    background-color: var(--color-black);
+}
+.container-footer
+{
+   margin: var(--margin-container-total-);
+   display: grid;
+   grid-template-columns: 80% 20%;
+   justify-content: start;
+   align-items: center;
+}
+
+.footer-logo
+{
+    width: 15.2em;
+}
+.container-footer__containt 
+{
+    display: flex;
+}
+.first-container-footer
+{
+    grid-column: 1/2;
+}
+.containt--p
+{
+    margin-left: 0.5em;
+    font-weight: medium;
+}
