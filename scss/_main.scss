@@ -1,4 +1,6 @@
-
+$breakpoint-laptop:1200px;
+$breakpoint-tablet:790px;
+$breakpoint-smartphone:480px;
 .main
 {
 display: grid;
@@ -14,17 +16,16 @@ grid-template-rows: auto;
     grid-column: 1/3;
     grid-auto-columns: 2fr;
     grid-template-columns: 50% 50%;
-    grid-template-rows: 100%;
+    grid-template-rows: auto;
     grid-auto-rows:1fr;
     justify-items: center;
     height: auto;
-    margin: var(--margin-total-for-container-menu);
     
 
 }
 .container__of__about-me-1
 {
-    margin: var(--margin-container-total-);
+    margin: var(--margin-container-total-laptop-);
     background-color: var(--color-container-);
     box-shadow: var(--border-boxshadow-section);
 }
@@ -68,7 +69,7 @@ grid-template-rows: auto;
 {
     grid-column:2/3;
     display: flex;
-    gap: 4em;
+    gap: 2.2em;
     width: auto;
     justify-content: center;
     align-items: center;
@@ -84,7 +85,7 @@ grid-template-rows: auto;
     flex-direction: column;
     justify-content: center;
     text-align: center;
-  
+    width: 50%;
 }
 .first-container__about-me-2
 {
@@ -92,13 +93,10 @@ grid-template-rows: auto;
 }
 .about-me-2-container
 {
-    display: grid;
-    grid-auto-rows: 1fr  1fr;
-    grid-template-rows: auto;
-    grid-template-columns: 1fr 1fr ;
-    grid-auto-columns: 1fr 1fr ;
-    gap: 1.5em;
-   justify-items: center
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8em;
+    justify-content: space-around;
 
 }
 .about-me-2__container
@@ -111,7 +109,10 @@ grid-template-rows: auto;
 .about-me-2__subcontainer
 {
    text-align: center;
- 
+    width: 90px;
+    display: grid;
+    justify-items:center ;
+    
 }
 .about-me-2__h3
 {
@@ -137,7 +138,7 @@ border-bottom: double  var(--color-wheat);
 
 .subcontainer-of-image1
 {
-    grid-column: 1;
+   
 }
 
 
@@ -145,11 +146,11 @@ border-bottom: double  var(--color-wheat);
 {
     display: grid;
     grid-column: 1/3;
-    margin:  var(--margin-total-for-container-menu) ;
+    margin: 8em 0em 0em 0em;
     background-image: linear-gradient(55deg, var(--gradient-linear-one)0%,var(--gradient-linear-second)100%), url(../img/fondo-escritorio1.png);
     background-size: cover;
     background-repeat: no-repeat;
-    height: 42em;
+    height: 38em;
     background-position-y: 55% ;
     opacity: 90%;
     background-attachment: fixed;
@@ -220,8 +221,7 @@ border-bottom: double  var(--color-wheat);
 }
 .projects-1
 {
-    margin: var(--margin-total-for-container-menu);
-    padding:var(--padding-container-total-);
+   margin: var(--margin-container-total-laptop-);
     display:grid;
     grid-auto-columns: 2fr;
     grid-template-columns: 1fr 1fr ; 
@@ -247,6 +247,8 @@ border-bottom: double  var(--color-wheat);
     margin-top: 2em;
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
+    gap:1.8em;
 }
 .container-projects__subcontainer
 {
@@ -312,7 +314,7 @@ border-bottom: double  var(--color-wheat);
 {
     box-shadow: var(--border-boxshadow-section);
     padding: var(--padding-container-menu-);
-    margin: var(--margin-container-total-);
+    margin: var(--margin-container-total-laptop-);
     background-color: var(--color-container-);
 }
 .container-contact__containt
@@ -341,4 +343,66 @@ border-bottom: double  var(--color-wheat);
 .container__contact--p
 {
     color: var(--color-black);
+}
+@media screen and(max-width:$breakpoint-laptop)
+{
+    .about-me-2
+    {
+        padding: 4em 4em 4em 0em;
+    }
+    .about-me-2__subcontainer
+    {
+        width: 80px;
+    }
+    .subcontainer-icon
+    {
+        font-size:3.2em ;
+    }
+    img.subcontainer-icon.subcontainer-type-image.typescript
+    {
+        width: 40px;
+    }
+    .about-me-1--h3
+    {
+        font-size:2em;
+    }
+    .about-me-1--p
+    {
+        font-size: 1.2em;
+    }
+    
+}
+@media screen and (max-width:$breakpoint-tablet) {
+    
+    .main__section-about-me__1
+    {
+        margin: var(--margin-container-total-tablet-);
+    }
+    .about-me-1--h2
+    {
+        font-size:4em;
+    }
+    .about-me-1--p
+    {
+        font-size: 1em;
+    }
+   
+    .about-me-1
+    {
+        grid-column: 1/3;
+        padding: 2em;
+    }  
+    .about-me-2
+    {
+        grid-column: 1/3;
+        padding: 0em 1em;
+    } 
+    .about-me-2__subcontainer
+    {
+        width: 50px;
+    }
+    .about-me-2__h3
+    {
+        font-size: 1.4em;
+    }
 }
