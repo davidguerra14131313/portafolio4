@@ -837,6 +837,8 @@ h4 {
 .services__container {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  gap: 25%;
 }
 
 .services__container__h2 {
@@ -849,24 +851,18 @@ h4 {
 
 .services__container-service {
   display: flex;
-  justify-content: center;
-  align-items: initial;
+  justify-content: space-around;
   flex-wrap: wrap;
-  margin-top: 11em;
+  margin: 0px;
 }
 
 .container-service__subcontainer__content {
-  display: flex;
   justify-content: center;
-  align-items: center;
-  width: 25%;
-}
-
-.container-service__subcontainer__content {
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 180px;
 }
 
 .subcontainer__content-image {
@@ -1025,6 +1021,11 @@ h4 {
   .about-me-1--p {
     font-size: 1.2em;
   }
+
+  .subcontainer__content-image {
+    height: 80px;
+    width: 100px;
+  }
 }
 @media screen and (max-width: 790px) {
   .main__section-about-me__1 {
@@ -1063,6 +1064,13 @@ h4 {
 
   img.subcontainer-icon.subcontainer-type-image.typescript {
     width: 40px;
+  }
+
+  .services__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10%;
   }
 }
 @media screen and (max-width: 480px) {
