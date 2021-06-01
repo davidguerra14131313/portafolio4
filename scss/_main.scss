@@ -59,7 +59,8 @@ grid-template-rows: auto;
     margin-bottom: 5px;
 }
 .about-me-1--p
-{
+{   
+    padding-top: 10px;
     color: var(--color-black);
     font-size: 1.5em;
     font-family: var(--font-family-2);
@@ -364,7 +365,7 @@ border-bottom: double  var(--color-wheat);
     }
     .about-me-1--h3
     {
-        font-size:2em;
+        font-size:2em;  
     }
     .about-me-1--p
     {
@@ -399,10 +400,31 @@ border-bottom: double  var(--color-wheat);
     } 
     .about-me-2__subcontainer
     {
-        width: 50px;
+        width: 70px;
     }
     .about-me-2__h3
     {
-        font-size: 1.4em;
+        font-size: 1.8em;
+    }
+}
+
+@media screen and (max-width:$breakpoint-smartphone) 
+{
+    #about-me 
+    {
+        margin: var(--margin-container-total-smartphone-);
+    }
+    .about-me-2
+    {
+        padding: 2em;
+    }
+    .container__of__about-me-1
+    {
+        margin: 0px;
+    }
+    .about-me-2__h3
+    {   
+        margin-top: 0px;
+        font-size: 1.3em;
     }
 }

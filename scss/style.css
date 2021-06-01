@@ -725,6 +725,7 @@ h4 {
 }
 
 .about-me-1--p {
+  padding-top: 10px;
   color: var(--color-black);
   font-size: 1.5em;
   font-family: var(--font-family-2);
@@ -1014,10 +1015,26 @@ h4 {
     padding: 0em 1em;
   }
   .about-me-2__subcontainer {
-    width: 50px;
+    width: 70px;
   }
   .about-me-2__h3 {
-    font-size: 1.4em;
+    font-size: 1.8em;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #about-me {
+    margin: var(--margin-container-total-smartphone-);
+  }
+  .about-me-2 {
+    padding: 2em;
+  }
+  .container__of__about-me-1 {
+    margin: 0px;
+  }
+  .about-me-2__h3 {
+    margin-top: 0px;
+    font-size: 1.3em;
   }
 }
 
@@ -1088,6 +1105,7 @@ body {
   --margin-container-total-:4em 8em 4em 8em;
   --margin-container-total-laptop-:8em 4em 0em 4em;
   --margin-container-total-tablet-:3em 0.9em 0em 0.9em;
+  --margin-container-total-smartphone-: 1.8em 0.3em 0em 0.3em;
   --color-border-icon:#bda06c;
   --color-container-:#f5f4ee;
 }
