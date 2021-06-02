@@ -966,7 +966,7 @@ h4 {
 }
 
 .container__contact--i {
-  font-size: 3em;
+  font-size: 2.7em;
 }
 
 .container__contact--p {
@@ -1043,6 +1043,9 @@ h4 {
   .projects-1__h2 {
     font-size: 4em;
   }
+  .service-1 {
+    padding: 2em;
+  }
   .container-service__subcontainer__content {
     width: 120px;
   }
@@ -1078,6 +1081,9 @@ h4 {
   }
   .about-me-2__subcontainer {
     width: 52px;
+  }
+  .service-1 {
+    padding: 1.8em;
   }
   section.main__section-services {
     margin-top: var(--margin-top-section-container-service-smartphone-);
@@ -1167,7 +1173,7 @@ h4 {
     margin-top: var(--margin-top-container-footer-smartphone-);
   }
   .container-footer {
-    margin: 2em;
+    margin: 1em;
   }
   .first-container-footer {
     font-size: 20px;

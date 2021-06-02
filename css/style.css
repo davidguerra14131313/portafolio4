@@ -996,7 +996,7 @@ h4 {
 }
 
 .container__contact--i {
-  font-size: 3em;
+  font-size: 2.7em;
 }
 
 .container__contact--p {
@@ -1091,6 +1091,10 @@ h4 {
     font-size: 4em;
   }
 
+  .service-1 {
+    padding: 2em;
+  }
+
   .container-service__subcontainer__content {
     width: 120px;
   }
@@ -1133,6 +1137,10 @@ h4 {
 
   .about-me-2__subcontainer {
     width: 52px;
+  }
+
+  .service-1 {
+    padding: 1.8em;
   }
 
   section.main__section-services {
@@ -1229,7 +1237,7 @@ h4 {
   }
 
   .container-footer {
-    margin: 2em;
+    margin: 1em;
   }
 
   .first-container-footer {
