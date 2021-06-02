@@ -788,7 +788,7 @@ h4 {
 .main__section-services {
   display: grid;
   grid-column: 1/3;
-  margin: 8em 0em 0em 0em;
+  margin-top: var(--margin-top-section-container-service-laptop-);
   background-image: linear-gradient(55deg, var(--gradient-linear-one) 0%, var(--gradient-linear-second) 100%), url(../img/fondo-escritorio1.png);
   background-size: cover;
   background-repeat: no-repeat;
@@ -869,15 +869,13 @@ h4 {
   grid-column: 1/3;
   display: flex;
   flex-direction: column;
-  margin-top: var(--margin-top);
-  margin-bottom: var(--margin-botton);
   box-shadow: var(--border-boxshadow-section);
   padding: 4em;
   background-color: var(--color-container-);
+  margin: 0em;
 }
 
 .projects-1__container-projects {
-  margin-top: 2em;
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
@@ -1023,11 +1021,40 @@ h4 {
   img.subcontainer-icon.subcontainer-type-image.typescript {
     width: 40px;
   }
+  section.main__section-services {
+    margin-top: var(--margin-top-section-container-service-tablet-);
+    height: auto;
+  }
   .services__container {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 10%;
+  }
+  .services__container__h2 {
+    font-size: 4em;
+  }
+  .projects-1 {
+    margin: var(--margin-container-total-tablet-);
+  }
+  .projects-1__h2 {
+    font-size: 4em;
+  }
+  .container-service__subcontainer__content {
+    width: 120px;
+  }
+  .projects-1__container {
+    padding: 0px;
+    padding: 2em;
+  }
+  .main__section-contact {
+    margin: var(--margin-container-total-tablet-);
+  }
+  .container-contact {
+    margin: 0px;
+    padding: 2em;
+  }
+  .contact-1__h2 {
+    font-size: 4em;
   }
 }
 
@@ -1048,9 +1075,24 @@ h4 {
   .about-me-2__subcontainer {
     width: 52px;
   }
+  section.main__section-services {
+    margin-top: var(--margin-top-section-container-service-smartphone-);
+  }
+  .projects-1__container {
+    margin: 0px;
+    padding: 2em;
+  }
+  .projects-1 {
+    margin: var(--margin-container-total-smartphone-);
+  }
+  .container-contact {
+    margin: 0px;
+    padding: 2em;
+  }
 }
 
 .footer {
+  margin-top: var(--margin-top-container-footer-laptop-);
   grid-column: 1/4;
   height: auto;
   background-color: var(--color-black);
@@ -1058,10 +1100,9 @@ h4 {
 
 .container-footer {
   margin: var(--margin-container-total-);
-  display: grid;
-  grid-template-columns: 80% 20%;
-  justify-content: start;
-  align-items: center;
+  display: flex;
+  gap: 100px;
+  justify-content: space-between;
 }
 
 .footer-logo {
@@ -1070,6 +1111,7 @@ h4 {
 
 .container-footer__containt {
   display: flex;
+  align-items: center;
 }
 
 .first-container-footer {
@@ -1079,6 +1121,56 @@ h4 {
 .containt--p {
   margin-left: 0.5em;
   font-weight: medium;
+}
+
+.second-container-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+@media screen and (max-width: 1200px) {
+  .container-footer {
+    margin: 2.2em;
+  }
+}
+
+@media screen and (max-width: 790px) {
+  .footer {
+    margin-top: var(--margin-top-container-footer-tablet-);
+  }
+  .container-footer {
+    margin: 2em;
+  }
+  .first-container-footer {
+    font-size: 20px;
+  }
+  .footer-logo {
+    width: 100px;
+  }
+  .containt--p {
+    margin-left: 0.5em;
+    font-size: 11px;
+    font-weight: medium;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .footer {
+    margin-top: var(--margin-top-container-footer-smartphone-);
+  }
+  .container-footer {
+    margin: 2em;
+  }
+  .first-container-footer {
+    font-size: 20px;
+  }
+  .footer-logo {
+    width: 80px;
+  }
+  .containt--p {
+    font-size: 9px;
+  }
 }
 
 * {
@@ -1118,6 +1210,12 @@ body {
   --margin-container-total-laptop-:8em 4em 0em 4em;
   --margin-container-total-tablet-:3em 0.9em 0em 0.9em;
   --margin-container-total-smartphone-: 1.8em 0.3em 0em 0.3em;
+  --margin-top-section-container-service-smartphone-: 1.8em;
+  --margin-top-section-container-service-tablet-:3em;
+  --margin-top-section-container-service-laptop-:8em;
+  --margin-top-container-footer-smartphone-: 1.8em;
+  --margin-top-container-footer-tablet-:3em;
+  --margin-top-container-footer-laptop-:8em;
   --color-border-icon:#bda06c;
   --color-container-:#f5f4ee;
 }

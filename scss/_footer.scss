@@ -1,6 +1,9 @@
-
+$breakpoint-laptop:1200px;
+$breakpoint-tablet:790px;
+$breakpoint-smartphone:480px;
 .footer
-{
+{   
+    margin-top: var(--margin-top-container-footer-laptop-);
     grid-column: 1/4;
     height: auto;
     background-color: var(--color-black);
@@ -8,10 +11,9 @@
 .container-footer
 {
    margin: var(--margin-container-total-);
-   display: grid;
-   grid-template-columns: 80% 20%;
-   justify-content: start;
-   align-items: center;
+   display: flex;
+   gap: 100px;
+   justify-content: space-between;
 }
 
 .footer-logo
@@ -21,6 +23,7 @@
 .container-footer__containt 
 {
     display: flex;
+    align-items: center;
 }
 .first-container-footer
 {
@@ -30,4 +33,72 @@
 {
     margin-left: 0.5em;
     font-weight: medium;
+}
+
+.second-container-footer
+{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.second-container-footer
+{
+}
+@media screen and (max-width:$breakpoint-laptop){
+
+.container-footer
+{
+    margin: 2.2em;
+}
+}
+@media screen and (max-width:$breakpoint-tablet)
+{
+.footer
+{
+    margin-top: var(--margin-top-container-footer-tablet-);
+}
+.container-footer
+{
+    margin: 2em;
+}
+.first-container-footer
+{
+    font-size: 20px;
+}
+.footer-logo
+{
+    width: 100px;
+}
+.containt--p
+{
+    margin-left: 0.5em;
+    font-size: 11px;
+    font-weight: medium;
+}
+
+
+}
+
+@media screen and (max-width:$breakpoint-smartphone)
+{
+.footer
+{
+    margin-top: var(--margin-top-container-footer-smartphone-);
+}
+.container-footer
+{
+    margin: 2em;
+}
+.first-container-footer
+{
+    font-size: 20px;
+}
+.footer-logo
+{
+    width: 80px;
+}
+.containt--p
+{
+    font-size: 9px ;
+}
 }
