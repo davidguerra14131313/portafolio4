@@ -1148,8 +1148,12 @@ h4 {
     margin: var(--margin-container-total-smartphone-);
   }
 
-  .container-contact {
+  .main__section-contact {
     margin: 0px;
+  }
+
+  .container-contact {
+    margin: var(--margin-container-total-smartphone-);
     padding: 2em;
   }
 }
