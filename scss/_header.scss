@@ -229,12 +229,13 @@ $breakpoint-smartphone:480px;
       align-self: flex-end;
     }
     .container-line {
-      visibility: hidden;
-    }
+      overflow: hidden;
+      width: 0%;
+    }/*
     .nav__list__container:hover .container-line {
       visibility: visible;
       display: flex;
-    }
+    }*/
     .container-total__container-title {
       width: 24em;
     }
@@ -648,12 +649,15 @@ $breakpoint-smartphone:480px;
     align-self: flex-end;
   }
   .container-line {
-    visibility: hidden;
+    overflow: hidden;
+    width: 0px;
+    transition: 1s;
   }
+  /*
   .nav__list__container:hover .container-line {
     visibility: visible;
     display: flex;
-  }
+  }*/
   .container-total__container-title {
     width: 20em;
   }
