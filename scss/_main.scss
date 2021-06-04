@@ -155,10 +155,14 @@ border-bottom: double  var(--color-wheat);
     background-repeat: no-repeat;
     height: 38em;
     background-position-y: 55% ;
-    opacity: 90%;
+    opacity: 0;
     background-attachment: fixed;
+    transition:  2s;
 }
-
+.aparece
+{
+    opacity: 1; 
+}
 .service-1
 {
     margin: var(--margin-total-for-container-menu);
