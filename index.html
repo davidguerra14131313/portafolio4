@@ -19,7 +19,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet"></head>
 <body>
     
-    <header class="cabecera">
+    <header class="cabecera" id="cabecera">
         <nav class="nav">
             <div class="nav__logo" id="logoweb">
                 <img src="LOGO/Product (8).png"  class="nav__logo-img" id="nav__logo-img"alt="logoPortafolio">
@@ -53,6 +53,7 @@
     
 
     <main class="main">
+        <span class="ico-home__container    "><a href="javascript:scrollTo('cabecera')"><i class="content__ico-home fas fa-sort-up"></i></a></span>
         <section class="main__section-about-me__1" id="about-me">
             <div class="main__section-about-me__1 container__of__about-me-1">
                 <div class="about-me-1 "> 
@@ -150,25 +151,25 @@
                 <div class="services__container">
                     <h2 class="services__container__h2">SERVICES</h2>
                     <div class="services__container-service">
-                        <div class="container-service__subcontainer__content">
+                        <div class="container-service__subcontainer__content  content-responsive">
                             <img src="./img/responsive.svg" class="subcontainer__content-image">
                             <p class="subcontainer-service__content-parrafo">
                                 responsive
                             </p>
                         </div>
-                        <div class="container-service__subcontainer__content">
+                        <div class="container-service__subcontainer__content content-setting">
                             <img src="./img/setting.svg"class="subcontainer__content-image"> 
                             <p class="subcontainer-service__content-parrafo">
                                 seo
                             </p>
                         </div>
-                        <div class="container-service__subcontainer__content">
+                        <div class="container-service__subcontainer__content content-design">
                             <img src="./img/design.svg" class="subcontainer__content-image">    
                             <p class="subcontainer-service__content-parrafo">
                                 design
                             </p>                            
                         </div>
-                        <div class="container-service__subcontainer__content">
+                        <div class="container-service__subcontainer__content content-developer">
                             <img src="./img/developer.svg" class="subcontainer__content-image">    
                             <p class="subcontainer-service__content-parrafo">
                                 developer

@@ -125,8 +125,10 @@ $breakpoint-smartphone:480px;
     left: 0px;
     right: 0px;
     position: absolute;
+    transition:  4s;
   }
   
+
   .container-total__container-title {
     position: relative;
     /*<-- ya esta relative siguiente paso sera hacer keyframe para todo el titulo*/
@@ -138,8 +140,9 @@ $breakpoint-smartphone:480px;
     width: 30em;
     backdrop-filter: blur(25px);
     box-shadow: 5px 5px 22px 5px #999;
+
   }
-  
+
   h2 {
     color: var(--color-black);
     font-size: 6.5em;
