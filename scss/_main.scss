@@ -287,11 +287,7 @@ border-bottom: double  var(--color-wheat);
     display: flex;
     flex-wrap: wrap;
     gap:1.8em;
-    overflow: hidden;
-    position: relative;
-    left: 0px;
-    animation: mymove 3s ;
-    overflow: hidden;
+   
 }
 .container-projects__subcontainer
 {
@@ -316,7 +312,10 @@ border-bottom: double  var(--color-wheat);
     flex-direction: column;
     justify-content: center;
     height: 100%;
- 
+    overflow: hidden;
+    position: relative;
+    left: 0px;
+    animation: mymove 3s ;
 }
 
 @keyframes mymove {
