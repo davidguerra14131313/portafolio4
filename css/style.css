@@ -159,6 +159,7 @@
 
 .content__container__curriculum {
   text-decoration: none;
+  display: inline-block;
 }
 
 .content__container__curriculum:hover {
