@@ -925,7 +925,7 @@ h4 {
 .services__container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
   gap: 25%;
 }
 
@@ -1007,6 +1007,7 @@ h4 {
   gap: 1.8em;
   position: relative;
   transition: all 7s;
+  justify-content: space-around;
 }
 
 .container-projects__subcontainer {
@@ -1015,6 +1016,8 @@ h4 {
   flex-direction: column;
   position: relative;
   left: 0px;
+  min-width: 16.4em;
+  width: 20em;
 }
 
 .container-projects__subcontainer-img {
@@ -1158,7 +1161,7 @@ h4 {
     margin: var(--margin-container-total-tablet-);
   }
   .about-me-1--h2 {
-    font-size: 3em;
+    font-size: 2.4em;
   }
   .about-me-1--p {
     font-size: 1em;
@@ -1193,7 +1196,7 @@ h4 {
     justify-content: center;
   }
   .services__container__h2 {
-    font-size: 3em;
+    font-size: 2.4em;
   }
   .subcontainer-service__content-parrafo {
     font-size: 18px;
@@ -1202,7 +1205,7 @@ h4 {
     margin: var(--margin-container-total-tablet-);
   }
   .projects-1__h2 {
-    font-size: 3em;
+    font-size: 2.4em;
   }
   .service-1 {
     padding: 2em;
@@ -1222,7 +1225,7 @@ h4 {
     padding: 2em;
   }
   .contact-1__h2 {
-    font-size: 3em;
+    font-size: 2.4em;
   }
 }
 

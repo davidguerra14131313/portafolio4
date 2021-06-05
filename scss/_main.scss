@@ -218,7 +218,7 @@ border-bottom: double  var(--color-wheat);
 {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     gap: 25%;
 }
 .services__container__h2
@@ -303,6 +303,7 @@ border-bottom: double  var(--color-wheat);
     gap:1.8em;
    position: relative;
    transition: all 7s;
+   justify-content: space-around;
 
 }
 .container-projects__subcontainer
@@ -312,6 +313,9 @@ border-bottom: double  var(--color-wheat);
     flex-direction: column;
     position: relative;
     left: 0px;
+    min-width: 16.4em;
+    width: 20em;
+
 }
 .container-projects__subcontainer-img
 {
@@ -487,7 +491,7 @@ border-bottom: double  var(--color-wheat);
     }
     .about-me-1--h2
     {
-        font-size:3em;
+        font-size:2.4em;
     }
     .about-me-1--p  
     {
@@ -533,7 +537,7 @@ border-bottom: double  var(--color-wheat);
     }
     .services__container__h2
     {
-        font-size: 3em;
+        font-size: 2.4em;
     }
     .subcontainer-service__content-parrafo
     {
@@ -545,7 +549,7 @@ border-bottom: double  var(--color-wheat);
     }
     .projects-1__h2
     {
-        font-size: 3em;
+        font-size: 2.4em;
     }
     .service-1
     {
@@ -572,7 +576,7 @@ border-bottom: double  var(--color-wheat);
     }
     .contact-1__h2
     {
-        font-size: 3em;
+        font-size: 2.4em;
     }
 }
 
