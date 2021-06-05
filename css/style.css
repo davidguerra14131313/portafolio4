@@ -1107,10 +1107,15 @@ h4 {
   justify-content: space-around;
   position: relative;
   transition: 5s;
+  color: var(--color-black);
 }
 
 .container__contact--i {
   color: var(--color-black);
+}
+
+.container__contact--i:hover {
+  color: var(--color-independence-);
 }
 
 .container__contact {
