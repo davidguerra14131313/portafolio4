@@ -121,7 +121,7 @@
   left: 0px;
   right: 0px;
   position: absolute;
-  transition: 4s;
+  overflow: hidden;
 }
 
 .container-total__container-title {
@@ -135,8 +135,19 @@
   width: 30em;
   backdrop-filter: blur(25px);
   box-shadow: 5px 5px 22px 5px #999;
+  animation: mymove_cabecera 6s;
 }
 
+@keyframes mymove_cabecera {
+  0% {
+    bottom: 150px;
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    bottom: 0px;
+  }
+}
 h2 {
   color: var(--color-black);
   font-size: 6.5em;
@@ -728,7 +739,7 @@ h4 {
 .ico-home__container {
   width: 70px;
   height: 70px;
-  border: solid 1px black;
+  border: solid 1px var(--color-independence-);
   display: flex;
   padding-top: 15px;
   margin: 2px;
@@ -736,7 +747,7 @@ h4 {
   justify-content: center;
   cursor: pointer;
   align-items: center;
-  background-color: #599797;
+  background-color: var(--color-cadet-blue);
   position: fixed;
   right: 0px;
   bottom: 0px;
@@ -751,8 +762,14 @@ h4 {
 }
 
 .content__ico-home {
-  color: black;
+  color: var(--color-white);
   font-size: 55px;
+  transition: 1s;
+}
+
+.content__ico-home:hover {
+  color: var(--color-independence-);
+  font-size: 45px;
 }
 
 #about-me {
@@ -768,6 +785,8 @@ h4 {
   grid-auto-rows: 1fr;
   justify-items: center;
   height: auto;
+  overflow: hidden;
+  padding-bottom: 5px;
 }
 
 .container__of__about-me-1 {
@@ -1015,7 +1034,7 @@ h4 {
 
 .container-projects__subcontainer__content--botons {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   column-gap: 2em;
 }
 
@@ -1356,10 +1375,6 @@ body {
   --width-height-total:100%;
   --font-family-parrafo: "KoHo", sans-serif;
   --font-family:"Amatic SC", "cursive","Goblin One", "cursive";
-  --border-boxshadow-section:5px 5px 2px #3A506B;
-  --color-white:white;
-  --color-wheat:rgb(207, 183, 138);
-  --color-black:black;
   --width-total:100%;
   --height-total:100%;
   --padding-container-menu-:4em;
@@ -1373,6 +1388,15 @@ body {
   --margin-top-container-footer-smartphone-: 1.8em;
   --margin-top-container-footer-tablet-:3em;
   --margin-top-container-footer-laptop-:8em;
+  --border-boxshadow-section:5px 5px 2px #3A506B;
+  --color-white:white;
+  --color-wheat:rgb(207, 183, 138);
+  --color-black:black;
+  --color-cadet-blue:#599797;
+  --color-mint-cream-:#EDF4ED;
+  --color-oxford-blue:#0B132B;
+  --color-purpureus:#A14DA0;
+  --color-independence-:#3A506B;
   --color-border-icon:#bda06c;
   --color-container-:#F5F4EE;
 }

@@ -125,7 +125,8 @@ $breakpoint-smartphone:480px;
     left: 0px;
     right: 0px;
     position: absolute;
-    transition:  4s;
+    overflow: hidden;
+    
   }
   
 
@@ -140,7 +141,18 @@ $breakpoint-smartphone:480px;
     width: 30em;
     backdrop-filter: blur(25px);
     box-shadow: 5px 5px 22px 5px #999;
-
+    animation: mymove_cabecera 6s ;
+  }
+  @keyframes mymove_cabecera {
+ 
+    0% {
+        bottom: 150px;
+        opacity: 0;
+      }
+     100% { 
+        opacity: 1;
+        bottom: 0px;
+      }
   }
 
   h2 {
