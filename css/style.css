@@ -1035,10 +1035,11 @@ h4 {
 .projects-1__container-projects {
   display: flex;
   flex-wrap: wrap;
-  gap: 1.8em;
+  gap: 50px;
   position: relative;
   transition: all 7s;
   justify-content: space-around;
+  align-items: center;
 }
 
 .container-projects__subcontainer {
@@ -1325,6 +1326,12 @@ h4 {
   .projects-1__container {
     margin: 0px;
     padding: 2em;
+  }
+
+  .projects-1__container-projects {
+    gap: 50px;
+    justify-content: space-around;
+    align-items: center;
   }
 
   .projects-1 {
