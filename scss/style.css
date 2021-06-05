@@ -1164,6 +1164,9 @@ h4 {
   .about-me-1--h2 {
     font-size: 2.4em;
   }
+  .about-me-1--h3 {
+    font-size: 1.6em;
+  }
   .about-me-1--p {
     font-size: 1em;
   }
@@ -1182,7 +1185,7 @@ h4 {
     font-size: 3.2em;
   }
   .about-me-2__h3 {
-    font-size: 1.8em;
+    font-size: 1.6em;
   }
   img.subcontainer-icon.subcontainer-type-image.typescript {
     width: 40px;
@@ -1194,7 +1197,9 @@ h4 {
   .services__container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
+    gap: 5em;
   }
   .services__container__h2 {
     font-size: 2.4em;
@@ -1233,6 +1238,9 @@ h4 {
 @media screen and (max-width: 480px) {
   #about-me {
     margin: var(--margin-container-total-smartphone-);
+  }
+  .about-me-1--h3 {
+    font-size: 1.3em;
   }
   .about-me-2 {
     padding: 2em;

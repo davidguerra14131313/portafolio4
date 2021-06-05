@@ -493,6 +493,10 @@ border-bottom: double  var(--color-wheat);
     {
         font-size:2.4em;
     }
+    .about-me-1--h3
+    {
+        font-size:1.6em;  
+    }
     .about-me-1--p  
     {
         font-size: 1em;
@@ -517,7 +521,7 @@ border-bottom: double  var(--color-wheat);
     }
     .about-me-2__h3
     {
-        font-size: 1.8em;
+        font-size: 1.6em;
     }
     img.subcontainer-icon.subcontainer-type-image.typescript
     {
@@ -529,11 +533,14 @@ border-bottom: double  var(--color-wheat);
         margin-top: var(--margin-top-section-container-service-tablet-);
         height: auto;
     }
+
     .services__container
     {
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: space-around;
+        align-items: center;
+        gap: 5em;
     }
     .services__container__h2
     {
@@ -586,10 +593,15 @@ border-bottom: double  var(--color-wheat);
     {
         margin: var(--margin-container-total-smartphone-);
     }
+    .about-me-1--h3
+    {
+        font-size:1.3em;  
+    }
     .about-me-2
     {
         padding: 2em;
     }
+    
     .container__of__about-me-1
     {
         margin: 0px;
